@@ -1,0 +1,756 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JobBoard &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link rel="stylesheet" href="css/custom-bs.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/line-icons/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/quill.snow.css">
+    
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+  </head>
+  <body id="top">
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+    
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6"><a href="index.html">JobBoard</a></div>
+
+          <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="has-children">
+                <a href="job-listings.html">Job Listings</a>
+                <ul class="dropdown">
+                  <li><a href="job-single.html">Job Single</a></li>
+                  <li><a href="post-job.html">Post a Job</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="services.html" class="active">Pages</a>
+                <ul class="dropdown">
+                  <li><a href="index.html">Job list</a></li>
+                  <!-- <li><a href="service-single.html">Service Single</a></li> -->
+                  <!-- <li><a href="blog-single.html">Blog Single</a></li> -->
+                  <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                  <!-- <li><a href="portfolio-single.html" class="active">Portfolio Single</a></li> -->
+                  <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+                  <!-- <li><a href="faq.html">Frequently Ask Questions</a></li> -->
+                  <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="all jobs.html">job-listings</a></li>
+              <li><a href="contact.html" >Contact</a></li>
+              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
+             
+            </ul>
+          </nav>
+          
+          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+            <div class="ml-auto">
+             
+              <a href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"   ><span class="mr-2 icon-lock_outline"></span>Log out</a>
+
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="text-white font-weight-bold">Portfolio Single (Extra Pages)</h1>
+           
+            <button id="logout-button">Logout</button>
+            <div class="custom-breadcrumbs">
+              <a href="index.html">Home</a> <span class="mx-2 slash">/</span>
+              <a href="portfolio.html">Portfolio</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>Portfolio Single</strong></span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="sidenav">
+<div class="container-fluid">
+    <div class="row">
+       <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar"></nav>
+
+    <div class="student-profile py-4"  style="margin-left: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card shadow-sm">
+              <div class="card-header bg-transparent text-center">
+                <img  src="images/profile.png" alt=""  style="width:80px;  Height:80px">
+                <br><br>
+               
+              </div>
+
+              
+              <div class="card-body"    style="background-color: grey;">
+                <div id="user-info"></div>
+                <p class="mb-0"><strong class="pr-1"></strong></p>
+                <div class="col-lg-8">
+                  <div class="card shadow-sm">
+                    <div class="card-header bg-transparent border-0">
+                      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white"  onclick="updateUser()">
+        Update Profile
+      </button>
+              </div>
+            </div>
+          </div>
+          
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputFirstName">First Name</label>
+            <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Fist Name">
+            <small  class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFirstName">Last Name</label>
+            <input type="text" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Fist Name">
+            <small  class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          
+         
+          <button type="submit" class="btn btn-primary" id="update-button">Update</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+                <h3 class="mb-0"><i class="far fa-clone pr-1"></i></h3>
+              </div>
+              <div class="card-body pt-0">
+                <table class="table table-bordered">
+
+                  <!-- HTML -->
+                  <div class="card-header bg-transparent border-0">
+
+                  <div id="resume-info"></div>
+                  
+                  <button  type="button"   class="btn-secondary"   onclick="downloadPDF()">Download PDF</button>
+
+                  <form id="resume-form">
+                    <div class="form-group">
+                        <label for="resume">Upload Resume</label>
+                        <input type="file" class="form-control" id="resume" name="resume" accept=".pdf">
+                    </div>
+                    <button type="button" class="btn btn-dark" onclick="uploadResume()" style="background-color: grey;">Update Resume</button><br><br>
+                    <a href="Job lists.html" class="btn btn-dark" style="background-color: grey; text-decoration: none; color: white;">
+                      <button type="button" class="btn btn-dark" style="background-color: grey;">Applied Jobs</button>
+                    </a>
+                    
+
+                    
+                </form>
+                
+                  <tr>
+                    <!-- <th width="30%">Roll</th> -->
+                    <!-- <td width="2%">:</td> -->
+                    <!-- <td>125</td> -->
+                  </tr>
+                  <tr>
+                    <!-- <th width="30%">Academic Year	</th> -->
+                    <!-- <td width="2%">:</td> -->
+                    <!-- <td>2020</td> -->
+                  </tr>
+                  <tr>
+                    <!-- <th width="30%">Gender</th> -->
+                    <!-- <td width="2%">:</td> -->
+                    <!-- <td>Male</td> -->
+                  </tr>
+                  <tr>
+                    <!-- <th width="30%">Reli</th> -->
+                    <!-- <td width="2%">:</td> -->
+                    <!-- <td>Group</td> -->
+                  </tr>
+                  
+                </div>
+                  <tr>
+                    <th width="30%">Applied Jobs</th>
+                    <td width="2%" id="applied-info">:</td>
+                    <td>B+</td>
+                  </tr>
+                </table>
+              </div>
+            
+               
+                </div>
+            
+              
+            </div>
+           
+
+        
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="panel"   style="margin-left: 750px;  margin-top: -650px;">
+      <div class="bio-graph-heading">
+         
+      </div>
+      <div class="panel-body bio-graph-info">
+          <h1>Bio Graph</h1>
+          <div class="row">
+              <div class="bio-row" >
+                  <p >First Name:<span id="firstname1">First Name</span></p>
+              </div>
+              <div class="bio-row">
+                  <p>Last Name:<span id="lastname1">Last Name </span></p>
+              </div>
+              <div class="bio-row">
+                  <p>Email:<span id="email1">Email </span></p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Birthday</span>: 13 July 1983</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Occupation </span>: UI Designer</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Email </span>: jsmith@flatlab.com</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Mobile </span>: (12) 03 4567890</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Phone </span>: 88 (02) 123456</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div>
+   
+    <footer class="site-footer">
+
+      <a href="#top" class="smoothscroll scroll-top">
+        <span class="icon-keyboard_arrow_up"></span>
+      </a>
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Search Trending</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Web Developers</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Company</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Support</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Contact Us</h3>
+            <div class="footer-social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-12">
+            <p class="copyright"><small>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  </div>
+  <script>
+   function getCurrentUser() {
+    // Get the access token from wherever you store it (localStorage, cookies, etc.)
+    const accessToken = localStorage.getItem('access_token'); // Change this based on your token storage mechanism
+    
+    if (!accessToken) {
+        // Handle the case where the access token is not available (user is not authenticated)
+        console.error('Access token not found. User is not authenticated.');
+        return Promise.reject('User not authenticated');
+    }
+
+    // Make a request to fetch the current user data
+    return fetch('http://127.0.0.1:8000/useraccount/current_user/', {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+        },
+    })
+    .then(response => {
+        if (!response.ok) {
+            if (response.status === 401) {
+                // Handle unauthorized access (token may be expired or invalid)
+                console.error('Unauthorized access. Token may be expired or invalid.');
+                // You can choose to redirect the user to the login page or handle it differently
+            } else {
+                throw new Error(`Request failed with status ${response.status}`);
+            }
+        }
+        return response.json();
+    })
+    .then(data => {
+        // The server successfully returned the current user data
+        console.log('Current User Data:', data,data.resume);
+        document.getElementById('firstname').value = data.first_name || '';
+            document.getElementById('lastname').value = data.last_name || '';
+            document.getElementById('email').value = data.email || '';
+            document.getElementById('password').value = data.password || '';
+            document.getElementById('firstname1').innerText = data.first_name || '';
+            document.getElementById('lastname1').innerText = data.last_name || '';
+             document.getElementById('email1').innerText = data.email || '';
+           
+            // Display user information on the page
+            document.getElementById('user-info').innerHTML = `
+                <h3>Hello, ${data.first_name}!</h3>
+                <p>Email: ${data.email}</p>
+            `;
+            localStorage.setItem("resume",data.resume);
+            console.log(localStorage)
+            
+        return data;
+    })
+    .catch(error => {
+        console.error('Error fetching current user data:', error);
+        throw error; // Propagate the error for further handling if needed
+    });
+}
+
+// Example usage:
+getCurrentUser()
+    .then(user => {
+
+      
+        // Handle the current user data (e.g., update UI, etc.)
+    })
+    .catch(error => {
+        // Handle errors (e.g., redirect to login page, display an error message, etc.)
+    });
+
+
+   
+   
+
+    // Event listener registration for the logout button
+ 
+    // Initial fetch using the provided access token
+   
+   
+
+     // Event listener registration for the logout button
+     document.getElementById('logout-button').addEventListener('click', logout);
+        
+
+        // Logout function
+        // Logout function
+        function logout() {
+    console.log('Logout button clicked');  // Check if this log appears
+    // Placeholder for logoutData, replace with actual data if needed
+    const logoutData = {};
+
+    // Make a POST request to the logout API
+    // Example client-side code
+fetch('http://127.0.0.1:8000/useraccount/logout/', {
+    method: 'POST',
+})
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Logout failed with status ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Logout successful', data);
+        // Handle any additional client-side actions (e.g., redirect, update UI, etc.)
+        window.location.replace('index.html');
+    })
+    .catch(error => {
+        console.error('Error during logout:', error);
+        alert('Logout failed');
+    });
+
+  }
+
+// update user//
+function updateUser() {
+  console.log('UpdateUser function called');
+    // Get the access token from wherever you store it (localStorage, cookies, etc.)
+    const accessToken = localStorage.getItem('access_token'); // Change this based on your token storage mechanism
+
+    if (!accessToken) {
+        // Handle the case where the access token is not available (user is not authenticated)
+        console.error('Access token not found. User is not authenticated.');
+        alert('User not authenticated'); // Show an alert for better user feedback
+        return Promise.reject('User not authenticated');
+    }
+
+    // Get values from form fields
+    var firstName = document.getElementById('firstname').value;
+    var lastName = document.getElementById('lastname').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;  // Assuming you have a password field
+
+    // Prepare the data object
+    var updateData = {
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+        password: password,  // Include password if provided
+    };
+
+    // Make a PUT request to update user data
+    return fetch('http://127.0.0.1:8000/useraccount/update_user/', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${accessToken}`,
+        },
+        body: JSON.stringify(updateData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Update failed with status ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(updatedUserData => {
+        console.log('Updated user data:', updatedUserData);
+
+        // Update the user information displayed on the page
+        document.getElementById('user-info').innerHTML = `
+            <h2>Hello, ${updatedUserData.first_name}!</h2>
+            <p>Email: ${updatedUserData.email}</p>
+        `;
+
+        // Close the modal
+        $('#exampleModal').modal('hide');
+
+        // Show a success message
+        alert('Update successful');
+    })
+    .catch(error => {
+        console.error('Error during update:', error);
+
+        // Show an error message
+        alert('Update failed. Please try again.');
+
+        // Check if the response has a 'text' method before calling it
+        if (error.response && error.response.text) {
+            error.response.text().then(text => console.error('Full response:', text));
+        }
+
+        // Handle update failure (show an error message, etc.)
+    });
+}
+
+// Event listener for the "Update" button in your form
+document.getElementById('update-button').addEventListener('click', function(event) {
+    console.log('Update button clicked');
+    event.preventDefault();
+    updateUser();// Call the function to update user data
+});
+
+
+
+
+   
+function uploadResume() {
+  // Get the access token from wherever you store it (localStorage, cookies, etc.)
+  const accessToken = localStorage.getItem('access_token'); // Change this based on your token storage mechanism
+
+  if (!accessToken) {
+    // Handle the case where the access token is not available (user is not authenticated)
+    console.error('Access token not found. User is not authenticated.');
+    return Promise.reject('User not authenticated');
+  }
+
+  const resumeInput = document.getElementById('resume');
+  const resumeFile = resumeInput.files[0];
+
+  if (!resumeFile) {
+    // No file selected, handle the case of adding a new resume
+    console.log('No resume file selected. You can handle this case accordingly.');
+    // You might want to display a message to the user or take other actions
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append('resume', resumeFile);
+
+  fetch('http://127.0.0.1:8000/useraccount/uploadresume/', {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+    },
+    body: formData,
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Resume upload failed with status ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(updatedUserData => {
+      console.log('Resume uploaded successfully:', updatedUserData);
+      // Optionally, update the displayed user information or take other actions
+      alert('Resume uploaded successfully');
+    })
+    .catch(error => {
+      console.error('Error during resume upload:', error);
+      alert('Resume upload failed');
+    });
+}
+
+// download resume//
+
+function displayResumeInfo(user) {
+    // Assuming user has a 'resume' field with the resume file name
+    const resumeFileName = user.resume;
+
+    // Display resume information
+    const resumeInfoContainer = document.getElementById('resume-info');
+    resumeInfoContainer.innerHTML = `
+        <h2>Resume Information</h2>
+        <p>Resume Name: ${resumeFileName}</p>
+        
+    `;
+}
+function downloadPDF() {
+    // Get the PDF path from localStorage
+    const pdfPath = localStorage.getItem('resume');
+    const serverBaseURL = "http://127.0.0.1:8000";  // Update with your server's base URL
+    const fullPath = serverBaseURL + '/media/' + pdfPath;
+
+    // Extract the filename from the path
+    const filename = pdfPath.split('/').pop();
+
+    // Fetch the file as a blob
+    fetch(fullPath)
+        .then(response => response.blob())
+        .then(blob => {
+            // Create a link element
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.target = '_blank'; // Open in a new tab
+            link.download = filename; // Set the filename
+
+            // Append the link to the body
+            document.body.appendChild(link);
+
+            // Trigger the click event to initiate the download
+            link.click();
+
+            // Remove the link from the DOM
+            document.body.removeChild(link);
+        })
+        .catch(error => {
+            console.error('Error fetching the file:', error);
+        });
+}
+
+// Example usage:
+getCurrentUser()
+    .then(user => {
+        if (!user) {
+            console.error('User data not available');
+            return;
+        }
+
+        displayResumeInfo(user);
+        // Handle the current user data (e.g., update UI, etc.)
+    })
+    .catch(error => {
+        // Handle errors (e.g., redirect to login page, display an error message, etc.)
+        console.error('Error fetching current user data:', error);
+    });
+
+// Attach the click event listener after defining the downloadResume function
+
+
+// download//
+
+// Function to get applied jobs for the current user
+// Function to get applied jobs for the current user
+// Function to get applied jobs for the current user
+function getAppliedJobsForCurrentUser() {
+    // Get the access token from localStorage
+    const accessToken = localStorage.getItem('access_token');
+
+    // Make a request to fetch the current user data
+    getCurrentUser()
+        .then(user => {
+            if (user && user.id) {
+                // If the user and user.id are available, proceed with fetching applied jobs
+                fetch(`http://127.0.0.1:8000/Job/applied/`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`,
+                        'Content-Type': 'application/json',
+                    },
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(appliedJobs => {
+                    // Handle the list of applied jobs (e.g., update UI)
+                    console.log('Applied Jobs:', appliedJobs);
+                   
+
+                    // Update the UI with applied job information
+                    const appliedInfoElement = document.getElementById('applied-info');
+                    appliedInfoElement.innerHTML = ''; // Clear previous content
+
+                    if (appliedJobs.length > 0) {
+                        appliedJobs.forEach(job => {
+                            // Customize this part based on how you want to display each applied job
+                            const jobInfo = `<p>${job.job.title} - ${job.appliedAt}</p>`;
+                            appliedInfoElement.innerHTML += jobInfo;
+                        });
+                    } else {
+                        appliedInfoElement.innerHTML = '<p>No applied jobs found.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching applied jobs:', error);
+                });
+            } else {
+                console.error('User or user.id is undefined. Cannot fetch applied jobs.');
+            }
+        })
+        .catch(error => {
+            // Handle errors (e.g., redirect to login page, display an error message, etc.)
+            console.error('Error fetching current user data:', error);
+        });
+}
+
+// Call the function to fetch and display applied jobs
+getAppliedJobsForCurrentUser();
+
+
+
+</script>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/stickyfill.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/quill.min.js"></script>
+    
+    
+    <script src="js/bootstrap-select.min.js"></script>
+    
+    <script src="js/custom.js"></script>
+   
+   
+     
+  </body>
+  </html>
